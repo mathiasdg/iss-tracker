@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <style type="text/css">
+      #mapid {
+        height: 690px;
+      }
+    </style>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"
+    ></script>
+
+    <title>ISS tracker</title>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td>Breedtegraad</td>
+        <td id="lat"></td>
+      </tr>
+      <tr>
+        <td>Lengtegraad</td>
+        <td id="long"></td>
+      </tr>
+      <tr>
+        <td>Hoogte</td>
+        <td id="hoogte"></td>
+      </tr>
+      <tr>
+        <td>Snelheid</td>
+        <td id="snelheid"></td>
+      </tr>
+    </table>
+
+    <div id="mapid"></div>
+    <div id="dropdown">
+      <select id="tile-type"></select>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
