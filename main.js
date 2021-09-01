@@ -14,7 +14,8 @@ const path_options = {
   color: "#1937a2"
 };
 
-const iss_map = L.map("mapid").setView([0, 0], 2);
+// eslint-disable-next-line no-undef
+const iss_map = L.map("map_id").setView([0, 0], 2);
 const icon = L.icon({
   iconUrl: "iss_logo.png",
   iconSize: [40, 26],

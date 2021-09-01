@@ -10,11 +10,7 @@
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""
     />
-    <style type="text/css">
-      #mapid {
-        height: 690px;
-      }
-    </style>
+    <link rel="stylesheet" href="main.css"></link>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script
@@ -31,26 +27,27 @@
   </head>
 
   <body>
-    <table>
-      <tr>
-        <td>Breedtegraad</td>
-        <td id="lat"></td>
-      </tr>
-      <tr>
-        <td>Lengtegraad</td>
-        <td id="long"></td>
-      </tr>
-      <tr>
-        <td>Hoogte</td>
-        <td id="hoogte"></td>
-      </tr>
-      <tr>
-        <td>Snelheid</td>
-        <td id="snelheid"></td>
-      </tr>
-    </table>
+    <div class="iss-data">
+      <p>
+        <span>Breedtegraad:</span>
+        <span id="lat"></span>
+      </p>
+      <p>
+        <span>Lengtegraad:</span>
+        <span id="long"></span>
+      </p>
+      <p>
+        <span>Hoogte:</span>
+        <span id="hoogte"></span>
+      </p>
+      <p>
+        <span>Snelheid:</span>
+        <span id="snelheid"></span>
+      </p>
+    </div>
 
-    <div id="mapid"></div>
+    <div id="map_id"></div>
+
     <div id="dropdown">
       <select id="tile-type"></select>
     </div>

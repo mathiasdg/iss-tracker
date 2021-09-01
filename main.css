@@ -1,0 +1,24 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#map_id {
+  height: 690px;
+}
+.iss-data {
+  margin: 0.3em 0;
+}
+.iss-data p {
+  padding: 0.2em 0.69em;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 11em;
+}
+.iss-data p span:last-child {
+  font-weight: 600;
+}
+.iss-data p span {
+  /* background-color: #8f1289; */
+}
